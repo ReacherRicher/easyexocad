@@ -1,6 +1,6 @@
 /** @type {import('next-sitemap').IConfig} */
 module.exports = {
-  siteUrl: 'https://www.easyexocad.com',
+  siteUrl: 'https://easyexocad.ir',
   generateRobotsTxt: false, // we have our own
   changefreq: 'weekly',
   priority: 0.7,
