@@ -1,4 +1,4 @@
-﻿import type { Metadata } from 'next'
+import type { Metadata } from 'next'
 import JsonLd from '@/components/JsonLd'
 import SectionTitle from '@/components/ui/SectionTitle'
 import CourseCard from '@/components/ui/CourseCard'

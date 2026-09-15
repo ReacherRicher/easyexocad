@@ -8,8 +8,12 @@ const navLinks = [
   { href: '/', label: 'خانه' },
   { href: '/courses', label: 'دوره‌ها' },
   { href: '/blog', label: 'بلاگ' },
+  { href: '/about', label: 'درباره من' },
   { href: '/contact', label: 'تماس با ما' },
 ]
+
+/** Highlighted partner link rendered separately with a distinct pill style */
+const partnerLink = { href: 'https://zircondesign.com?ref=easyexocad', label: 'طراحی برون‌سپاری' }
 
 export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false)
@@ -61,6 +65,19 @@ export default function Navbar() {
               </Link>
             )
           })}
+          {/* Partner highlighted link */}
+          <a
+            href={partnerLink.href}
+            target="_blank"
+            rel="noreferrer"
+            className="inline-flex items-center gap-1.5 bg-brand-blue/20 hover:bg-brand-blue/30 border border-brand-blue/40 text-blue-100 hover:text-white font-semibold text-xs px-3.5 py-2 rounded-lg transition-all duration-200"
+          >
+            <svg className="w-3.5 h-3.5 text-brand-gold" viewBox="0 0 16 16" fill="currentColor">
+              <path d="M8 0a8 8 0 100 16A8 8 0 008 0zm3.5 7.5h-3V4.5a.5.5 0 00-1 0v3h-3a.5.5 0 000 1h3v3a.5.5 0 001 0v-3h3a.5.5 0 000-1z"/>
+            </svg>
+            {partnerLink.label}
+          </a>
+
           <Link
             href="/courses"
             className="bg-brand-gold hover:bg-brand-gold-light text-brand-navy font-bold text-sm px-5 py-2 rounded-lg transition-colors duration-200"
@@ -105,6 +122,20 @@ export default function Navbar() {
               </Link>
             )
           })}
+          {/* Partner highlighted link — mobile */}
+          <a
+            href={partnerLink.href}
+            target="_blank"
+            rel="noreferrer"
+            onClick={() => setMenuOpen(false)}
+            className="block py-3 text-sm font-semibold border-b border-white/5 text-brand-gold hover:text-brand-gold-light transition-colors duration-200 flex items-center gap-2"
+          >
+            <svg className="w-3.5 h-3.5" viewBox="0 0 16 16" fill="currentColor">
+              <path d="M8 0a8 8 0 100 16A8 8 0 008 0zm3.5 7.5h-3V4.5a.5.5 0 00-1 0v3h-3a.5.5 0 000 1h3v3a.5.5 0 001 0v-3h3a.5.5 0 000-1z"/>
+            </svg>
+            {partnerLink.label}
+          </a>
+
           <Link
             href="/courses"
             onClick={() => setMenuOpen(false)}
