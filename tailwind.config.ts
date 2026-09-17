@@ -18,7 +18,7 @@ const config: Config = {
         },
       },
       fontFamily: {
-        vazirmatn: ['IRANYekan', 'sans-serif'],
+        vazirmatn: ['IRANYekan', 'var(--font-vazirmatn)', 'sans-serif'],
       },
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',

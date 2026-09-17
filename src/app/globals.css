@@ -2,8 +2,80 @@
 @tailwind components;
 @tailwind utilities;
 
+/* ── IRANYekan local font-face declarations ── */
+@font-face {
+  font-family: 'IRANYekan';
+  src: url('/fonts/IRANYekanThin.woff2') format('woff2');
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'IRANYekan';
+  src: url('/fonts/IRANYekanUltraLight.woff2') format('woff2');
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'IRANYekan';
+  src: url('/fonts/IRANYekanLight.woff2') format('woff2');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'IRANYekan';
+  src: url('/fonts/IRANYekanRegular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'IRANYekan';
+  src: url('/fonts/IRANYekanMedium.woff2') format('woff2');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'IRANYekan';
+  src: url('/fonts/IRANYekanDemiBold.woff2') format('woff2');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'IRANYekan';
+  src: url('/fonts/IRANYekanBold.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'IRANYekan';
+  src: url('/fonts/IRANYekanExtraBold.woff2') format('woff2');
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'IRANYekan';
+  src: url('/fonts/IRANYekanBlack.woff2') format('woff2');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
 :root {
-  --font-vazirmatn: 'IRANYekan', sans-serif;
   --color-brand-navy: #1E3A5F;
   --color-brand-blue: #2D7DD2;
   --color-brand-gold: #C9A84C;
@@ -17,7 +89,7 @@
   }
 
   body {
-    font-family: var(--font-vazirmatn);
+    font-family: 'IRANYekan', var(--font-vazirmatn), sans-serif;
     direction: rtl;
     text-align: right;
     background-color: #ffffff;
@@ -27,13 +99,13 @@
   }
 
   h1, h2, h3, h4, h5, h6 {
-    font-family: var(--font-vazirmatn);
+    font-family: 'IRANYekan', var(--font-vazirmatn), sans-serif;
     font-weight: 700;
     line-height: 1.4;
   }
 
   p, span, a, li, button, input, textarea {
-    font-family: var(--font-vazirmatn);
+    font-family: 'IRANYekan', var(--font-vazirmatn), sans-serif;
   }
 }
 
